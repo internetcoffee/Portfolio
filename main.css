@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 
+.mobile-layout { display: none; }
+
+.desktop-layout { display: block; }
+
 body {
   margin: 0;
   height: 100vh;
   background-color: #161616;
-  overflow: scroll;
+  overflow-x: hidden;
   
   /* sets repeating svg background */
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ccircle cx='5' cy='5' r='1' fill='white' fill-opacity='0.4'/%3E%3C/svg%3E");
@@ -16,7 +20,7 @@ body {
 }
 
 body.no-scroll {
-  overflow: hidden;
+  overflow-y: hidden;
   height: 100%;
 }
 
@@ -79,6 +83,7 @@ a {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: #F9F9F9;
 }
 
 button {
@@ -133,8 +138,6 @@ button {
   margin: 0;
   margin-top: 80px;
 }
-
-.hover {}
 
 .hover-color:hover {
   color: #FFCB00;
@@ -211,9 +214,6 @@ title {
 
 #headshot {
   border-radius: 35px;
-}
-
-.home-container {
 }
 
 .home-img {
@@ -554,4 +554,74 @@ title {
   width: 210px;
   left: 322px;
   top: 580px;
+}
+
+.desktop-block {
+  cursor: default;
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color:#161616;
+}
+
+.block-logo {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .mobile-layout { display: block; }
+
+  .desktop-layout { display: none; }
+
+  body {
+    background-image: none;
+    cursor: default;
+  }
+
+  #mobile-header {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* left: 50%; /* relative to nearest positioned ancestor or body element */
+    /* transform: translateX(-50%); */
+  }
+
+  #mobile-contents {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    margin: 20px 40px;
+  }
+
+  .proj-list {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .page-bg {
+    opacity: 1;
+    cursor: default;
+    pointer-events: auto;
+    margin: auto;
+    padding: 0;
+    padding-top: 40px;
+    width: 100%;
+  }  
+
+  .carousel {
+    height: 170px;
+  }
+
+  .ux-box {
+    height: 30vh;
+    width: 100%;
+  }
 }
