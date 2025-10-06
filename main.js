@@ -121,3 +121,13 @@ document.addEventListener("DOMContentLoaded", function () {
 if (window.innerWidth <= 768) {
   document.body.classList.remove('no-scroll');
 }
+
+
+let chromeAgent = userAgentString.indexOf("Chrome") > -1;
+let safariAgent = userAgentString.indexOf("Safari") > -1;
+if ((chromeAgent) && (operaAgent)) chromeAgent = false;
+
+document.getElementById("test").style.color = blue;
+// document.getElementById("test").style.opacity = 1;
+if (true == true) {
+};
