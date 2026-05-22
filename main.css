@@ -52,6 +52,10 @@ h1 {
   margin-top: 0;
 }
 
+.code-saver-override {
+  font-family: code-saver, sans-serif !important;
+}
+
 h3 {
   font-family: code-saver, sans-serif;
   font-style: normal;
