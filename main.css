@@ -581,15 +581,23 @@ title {
   z-index: 100;
   position: absolute;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background-color:#161616;
 }
 
+.desktop-block p {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .block-logo {
   position: relative;
   display: block;
-  margin: auto;
+  margin: 0;
   width: fit-content;
   height: fit-content;
 }
