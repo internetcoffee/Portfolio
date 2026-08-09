@@ -499,6 +499,8 @@ title {
 #kosu {
   display: none;
   pointer-events: none;
+  min-height: calc(100vh - 140px);
+  padding-bottom: 140px;
 }
 
 #kosu.visible {
@@ -563,6 +565,8 @@ title {
 #we {
   display: none;
   pointer-events: none;
+  min-height: calc(100vh - 140px);
+  padding-bottom: 140px;
 }
 
 #we.visible {

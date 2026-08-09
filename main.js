@@ -103,6 +103,10 @@ document.addEventListener("DOMContentLoaded", function () {
       xButton.classList.add("visible");
 
       document.body.classList.remove('no-scroll');
+
+      // reset scroll to top
+      window.scrollTo(0, 0);
+      pageBg.scrollTop = 0;
     });
   });
 
