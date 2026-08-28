@@ -422,6 +422,22 @@ title {
   top:-28px;
 }
 
+#murphy {
+  display: none;
+  pointer-events: none;
+}
+
+#murphy.visible {
+  display: block;
+  pointer-events: auto;
+}
+
+#murphy-home {
+  width: 230px;
+  left: 280px;
+  top:562px;
+}
+
 #ea {
   display: none;
   pointer-events: none;
@@ -576,8 +592,8 @@ title {
 
 #we-home {
   width: 210px;
-  left: 322px;
-  top: 580px;
+  left: 160px;
+  top: -98px;
 }
 
 .desktop-block {
